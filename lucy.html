@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="slack-app-id" content="A069E0U0VQU">
+    <meta name="viewport"="" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <title>Lucy | Ecommerce Bundl Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_15_Pro_Max__iPhone_15_Plus__iPhone_14_Pro_Max_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_15_Pro__iPhone_15__iPhone_14_Pro_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_11__iPhone_XR_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/12.9__iPad_Pro_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.9__iPad_Air_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.5__iPad_Air_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.2__iPad_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/8.3__iPad_Mini_landscape.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_15_Pro_Max__iPhone_15_Plus__iPhone_14_Pro_Max_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_15_Pro__iPhone_15__iPhone_14_Pro_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_11__iPhone_XR_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/12.9__iPad_Pro_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.9__iPad_Air_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.5__iPad_Air_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.2__iPad_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png">
+    <link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/8.3__iPad_Mini_portrait.png">
+    <link rel="icon" type="image/svg" sizes="32x32" href="/images/favicon.svg">
+    <link rel="icon" type="image/svg" sizes="16x16" href="/images/favicon.svg">
+    <link rel="manifest" href="/pwa.webmanifest">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<div id="product-container"></div>
+<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+        padding: 0;
+        margin: 0;
+        background: #f5f5f5;
+    }
+
+    #cart-icon {
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+    }
+
+    #input-container {
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100vw;
+        height: 80px;
+        z-index: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 3%;
+        align-items: center;
+    }
+
+    #cart-icon img {
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    #cart-count {
+        background-color: #5d3fd3;
+        color: #fff;
+        border-radius: 50%;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    #cart-modal {
+        display: none;
+    }
+
+    .product-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 90px 4%;
+    }
+
+    .product-grid {
+        display: flex;
+        overflow-x: scroll;
+        gap: 24px;
+        width: 100%;
+        max-width: 950px;
+        padding: 20px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: relative;
+        padding: 24px;
+        min-width: 400px;
+        background: #fff;
+        border-radius: 0;
+        width: 100%;
+        max-width: 420px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .card-pill {
+        position: absolute;
+        padding: 6px 12px;
+        border-radius: 0;
+        color: #fff;
+        background: #000;
+        right: 0;
+        top: 0;
+        margin-right: 32px;
+        margin-top: 32px;
+        line-height: 1;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .card-img {
+        display: block;
+        width: 100%;
+        max-height: 320px;
+        object-fit: cover;
+        margin-bottom: 16px;
+    }
+
+    .product-brand {
+        font-size: 12px;
+        line-height: 1;
+        margin-top: 12px;
+        margin-bottom: 0;
+        color: #646464;
+    }
+
+    .product-cat {
+        font-size: 12px;
+        line-height: 1;
+        margin-top: 12px;
+        margin-bottom: 0;
+        color: #646464;
+        background: #f5f5f5;
+        padding: 6px 12px;
+        border-radius: 0;
+    }
+
+    .product-name {
+        font-size: 1.7rem;
+        line-height: 1;
+        margin-bottom: 6px;
+        margin-top: 0;
+        color: #000;
+    }
+
+    .flex-row {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .mb-sm {
+        margin-bottom: 8px;
+    }
+
+    .price {
+        margin-right: 12px;
+    }
+
+    .strike {
+        text-decoration: line-through;
+        opacity: 0.4;
+    }
+
+    .btn-col {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .icon-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #fff;
+        background: #000;
+        padding: 1.4em 0;
+        border-radius: 0;
+        transition: background 0.3s ease;
+        text-decoration: none;
+        line-height: 1;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .rubicons {
+        width: 24px;
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .icon-link:hover {
+        background: #333;
+    }
+
+    .icon-link:hover>.rubicons {
+        transform: translate(3px, -3px);
+    }
+
+    .hide {
+        display: none;
+    }
+
+    #loader {
+        display: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 640px) {
+        .product-grid {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+    }
+
+    #checkout-container {
+        display: none;
+        position: fixed;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 80%;
+        padding: 40px;
+    }
+
+    #checkout-overlay {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 68%);
+        z-index: 1;
+    }
+
+    input {
+        border: none;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+
+    #checkout-modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 2;
+    }
+</style>
+<div id="input-container"><svg width="36px" height="30px" viewbox="0 0 546 610" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M306.163 148.746L306.111 148.722L306.057 148.7C300.621 146.446 294.089 146.134 288.219 148.739L288.211 148.742L288.204 148.746L114.449 226.738C110.47 228.28 107.015 231.084 104.63 234.667L104.597 234.717L104.565 234.768L56.0109 312.673L55.8813 312.881L55.778 313.104L55.6121 313.461C50.1799 322.88 54.8013 334.128 64.6049 338.577L64.614 338.581L64.6231 338.586L101.855 355.258V440.272V444.272H102.428C103.73 449.689 107.648 454.468 113.448 456.969L288.174 535.331C288.18 535.334 288.185 535.336 288.191 535.339C293.493 537.764 300.275 538.033 306.175 535.339C306.18 535.337 306.185 535.335 306.189 535.333L479.57 457.618C487.058 455.159 492.365 448.116 492.365 440.316V355.306L528.607 339.139C528.845 339.04 529.048 338.939 529.156 338.885L529.253 338.837C529.293 338.816 529.322 338.802 529.346 338.79L529.858 338.725L530.487 338.399C540.194 333.371 544.084 321.999 538.313 312.683L538.309 312.676L538.305 312.67L489.653 234.765L489.623 234.716L489.591 234.668C487.615 231.698 484.869 228.908 480.878 227.168C480.87 227.165 480.863 227.161 480.855 227.158L306.163 148.746ZM245.236 406.441L246.014 406.789H246.237C252.379 409.362 260.193 407.504 263.783 401.638C263.786 401.634 263.788 401.63 263.79 401.625L283.247 370.163V491.592L142.697 428.596V360.634L245.236 406.441ZM330.54 401.601C334.117 407.437 341.92 409.375 348.095 406.745H348.306L349.087 406.395L451.718 360.38V428.551L310.924 491.594V370.245L330.527 401.582C330.531 401.588 330.535 401.595 330.54 401.601ZM132.654 327.381L132.528 327.324L132.399 327.276C132.212 327.207 132.03 327.125 131.704 326.978C131.596 326.929 131.473 326.873 131.328 326.808C130.894 326.614 130.312 326.359 129.65 326.143L102.278 313.814L133.831 263.333L277.853 327.802L246.252 378.484L132.654 327.381ZM161.402 247.205L283.247 192.712V301.894L161.402 247.205ZM432.901 247.243L310.924 301.815V192.711L432.901 247.243ZM492.312 313.729L347.976 378.484L316.506 327.805L460.501 263.327L492.312 313.729Z" fill="#5D3FD3" stroke="#5D3FD3" stroke-width="8"></path><path d="M153.905 186.044C182.142 185.782 198.408 195.532 201.337 216.513C201.694 198.261 201.343 179.758 238.271 174.762C207.952 179.162 194.703 166.474 190.777 144.186C192.924 165.79 185.394 182.294 153.905 186.044ZM150.991 112.811C161.128 116.697 166.731 122.688 160.972 133.885C167.509 124.428 175.748 121.194 185.802 124.689C177.703 120.645 169.385 116.803 175.819 103.557C170.66 114.501 161.843 116.256 150.991 112.811ZM182.374 284.618C194.981 284.488 202.204 288.879 203.5 298.211C203.654 290.068 203.528 281.847 219.936 279.595C206.456 281.571 200.513 275.913 198.797 266.004C199.73 275.615 196.373 282.977 182.374 284.618ZM167.94 72.6378C180.547 72.5073 187.77 76.8989 189.065 86.231C189.22 78.0876 189.094 69.8665 205.502 67.6147C192.022 69.5901 186.078 63.9328 184.363 54.0232C185.296 63.6342 181.938 70.9962 167.94 72.6378ZM226.588 243.783C263.266 247.981 262.148 266.542 261.724 284.797C265.502 263.754 282.224 253.626 310.453 253.319C279.107 250.217 272.287 233.87 275.312 212.266C270.443 234.577 256.687 247.535 226.588 243.783ZM214.455 137.679C255.76 137.225 279.619 151.604 283.901 182.313C284.371 155.635 283.887 128.394 337.904 121.17C293.636 127.551 274.206 109.007 268.441 76.4226C271.57 107.977 260.526 132.151 214.455 137.679ZM228.399 57.0059C243.709 62.5052 249.805 71.1378 245.74 83.3182C250.785 73.2534 255.6 62.989 276.756 67.5912C259.306 63.9912 255.548 54.3546 259.481 41.2701C254.766 53.5952 246.344 61.2311 228.399 57.0059ZM315.859 271.941C326.104 265.294 335.057 264.978 342.671 271.587C337.098 265.154 331.201 258.805 343.068 248.542C333.433 257.072 324.641 255.73 316.255 248.896C323.793 255.907 326.163 263.396 315.859 271.941ZM304.738 194.389C321.452 185.587 331.985 191.034 340.058 202.167C332.586 190.089 333.728 179.509 350.154 171.494C330.253 181.472 322.618 172.412 314.833 163.717C322.165 174.834 318.545 184.996 304.738 194.389ZM294.229 64.4481C339.044 73.7787 360.303 95.1887 355.1 129.931C364.134 100.725 372.311 70.7125 433.051 75.494C383.057 72.0982 367.99 47.0949 372.105 9.96336C365.519 45.3515 345.845 69.2975 294.229 64.4481ZM346.249 239.51C383.033 225.57 410.801 230.382 428.214 255.809C416.856 232.292 404.405 208.655 449.648 184.574C412.762 204.715 387.084 194.899 367.487 168.312C384.26 194.873 385.048 219.597 346.249 239.51ZM372.461 138.44C387.829 148.943 391.554 160.658 382.483 173.508C391.942 163.314 401.22 152.798 423.588 163.863C405.091 154.93 404.313 142.706 413.557 128.738C403.761 141.685 391.214 148.202 372.461 138.44ZM389.405 35.9931C402.012 35.8626 409.235 40.2542 410.53 49.5863C410.685 41.4429 410.559 33.2218 426.953 30.9717C413.474 32.9472 407.543 27.2881 405.828 17.3785C406.761 26.9895 403.403 34.3515 389.405 35.9931ZM427.119 128.711C439.727 128.58 446.95 132.972 448.245 142.304C448.399 134.16 448.273 125.939 464.668 123.689C451.188 125.665 445.258 120.006 443.543 110.096C444.476 119.707 441.118 127.069 427.119 128.711Z" fill="#D3983F"></path></svg>
+    <form
+        action="#" method="get"><input id="product-input" type="search" placeholder="Trip to cabo in July  |  Bags for travel  |  NYC in winter" style="min-width:250px;width:50vw;border-radius:10px;"></form>
+        <div id="cart-icon" onclick="openCartModal()"><svg width="24px" height="24px" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.2998 5H22L20 12H8.37675M21 16H9L7 3H4M4 8H2M5 11H2M6 14H2M10 20C10 20.5523 9.55228 21 9 21C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19C9.55228 19 10 19.4477 10 20ZM21 20C21 20.5523 20.5523 21 20 21C19.4477 21 19 20.5523 19 20C19 19.4477 19.4477 19 20 19C20.5523 19 21 19.4477 21 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <span
+                id="cart-count">0</span>
+        </div>
+</div>
+<div class="modal" id="cart-modal" style="position: fixed;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);background: #fff;padding: 10px 20px;border-radius: 10px;top: 60px;right: 30px;width: 300px;z-index: 1;">
+    <div class="modal-content"><span class="close" onclick="closeCartModal()" style="cursor: pointer;">&times;</span>
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="cart-total">$0.00</span></p><button id="checkout-btn" onclick="openCheckoutModal()" style="background: #000;cursor:pointer;color: #fff;border: none;border-radius: 5px;padding: 5px;">Checkout</button><button id="expresscheckout-btn"
+            onclick="openCheckout()" style="background: none;margin-left:50px;cursor:pointer;color: #000;border: none;border-radius: 5px;padding: 5px;text-decoration:underline;">Express Checkout</button></div>
+</div>
+<div id="checkout-overlay" onclick="closeCheckoutModal()"></div>
+<div class="modal" id="checkout-container">
+    <div class="modal-content"><span class="close" onclick="closeCheckoutModal()">&times;</span>
+        <h2>Add Shipping Address</h2>
+        <form id="checkout-form" style="    display: flex;    flex-direction: column;    "><label for="firstName">First Name:</label><input id="firstName" type="text" required=""><label for="lastName">Last Name:</label><input id="lastName" type="text" required=""><label for="address1">Address 1:</label><input id="address1" type="text"
+                required=""><label for="address2">Address 2:</label><input id="address2" type="text"><label for="city">City:</label><input id="city" type="text" required=""><label for="province">Province:</label><input id="province" type="text" required="">
+            <label
+                for="zip">ZIP Code:</label><input id="zip" type="text" required=""><label for="country">Country:</label><input id="country" type="text" required=""><label for="phone">Phone:</label><input id="phone" type="tel" required=""><button type="submit" style="      margin-top: 20px;      padding: 10px;      background: #000;      color: #fff;      border: none;      cursor:pointer;      border-radius: 5px;      ">Finalise Checkout</button></form>
+    </div>
+</div>
+<section class="product-section">
+    <div class="product-grid">
+        <div id="loader" title="loading..."><svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewbox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve"><rect x="0" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatcount="indefinite"></animate></rect><rect x="10" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatcount="indefinite"></animate></rect><rect x="20" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatcount="indefinite"></animate></rect></svg></div>
+    </div>
+</section>
+<script>
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const cartCount = document.getElementById('cart-count');
+    const cartModal = document.getElementById('cart-modal');
+    const loader = document.getElementById('loader');
+    const productInput = document.getElementById('product-input');
+    var checkoutId = "";
+    var checkoutUrl = "";
+    let cart = [];
+    const checkoutContainer = document.getElementById('checkout-container');
+    const checkoutOverlay = document.getElementById('checkout-overlay');
+    const checkoutForm = document.getElementById('checkout-form');
+    const firstNameInput = document.getElementById('firstName');
+    const lastNameInput = document.getElementById('lastName');
+    const address1Input = document.getElementById('address1');
+    const address2Input = document.getElementById('address2');
+    const cityInput = document.getElementById('city');
+    const provinceInput = document.getElementById('province');
+    const zipInput = document.getElementById('zip');
+    const countryInput = document.getElementById('country');
+    const phoneInput = document.getElementById('phone');
+    checkoutForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        placeOrder();
+    });
+
+    function openCheckoutModal() {
+        closeCartModal(); // Close the cart modal before opening the checkout modal
+        checkoutContainer.style.display = 'block';
+        checkoutOverlay.style.display = 'flex';
+    }
+
+    function closeCheckoutModal() {
+        checkoutContainer.style.display = 'none';
+        checkoutOverlay.style.display = 'none';
+    }
+    async function placeOrder() {
+        const firstName = firstNameInput.value;
+        const lastName = lastNameInput.value;
+        const address1 = address1Input.value;
+        const address2 = address2Input.value;
+        const city = cityInput.value;
+        const province = provinceInput.value;
+        const zip = zipInput.value;
+        const country = countryInput.value;
+        const phone = phoneInput.value;
+        // Perform validation and order placement logic here
+        // For simplicity, we'll just display an alert
+        const apiUrl = 'https://app.bundl.ai/api/v1/updateaddress';
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "checkoutId": checkoutId,
+                "address1": address1,
+                "address2": address2,
+                "city": city,
+                "country": country,
+                "firstName": firstName,
+                "lastName": lastName,
+                "phone": phone,
+                "province": province,
+                "zip": zip
+            })
+        }
+        // Using Axios to make a GET request
+        const res = await fetch(apiUrl,
+            options)
+        const data = await res.json()
+        closeCheckoutModal();
+        window.open(checkoutUrl, "_blank");
+    }
+
+    function openCheckout() {
+        window.open(checkoutUrl, '_blank').focus();
+    }
+    $(document).keypress(function(e) {
+        if (e.which === 13) {
+            if (e.shiftKey) // thruthy
+            {
+                return true;
+                // new line
+            } else {
+                // run your function
+                event.preventDefault();
+                sendMessage();
+            }
+            return false;
+
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(a => {
+            a.addEventListener('click', function() {
+                openCartModal();
+            });
+        });
+        async function creatcart() {
+            const apiUrl = 'https://app.bundl.ai/api/v1/createcart';
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+            // Using Axios to make a GET request
+            const res = await fetch(apiUrl,
+                options)
+            const data = await res.json()
+            console.log(data)
+            checkoutId = data.id;
+            checkoutUrl = data.url;
+        }
+        creatcart();
+    });
+    // Your existing code for product cards and UI interactions can go here
+    function updateCartUI() {
+        renderCart();
+        updateCartCount();
+        updateTotalAmount();
+    }
+
+    function renderCart() {
+        cartItemsContainer.innerHTML = '';
+        cart.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.innerText = `${item.name} - $${item.price.toFixed(2)}`;
+            cartItemsContainer.appendChild(listItem);
+        });
+    }
+
+    function updateCartCount() {
+        cartCount.innerText = cart.length.toString();
+    }
+
+    function updateTotalAmount() {
+        const totalAmount = cart.reduce((total, item) => total + item.price, 0);
+        cartTotal.innerText = `$${totalAmount.toFixed(2)}`;
+    }
+
+    function openCartModal() {
+        cartModal.style.display = 'block';
+    }
+
+    function closeCartModal() {
+        cartModal.style.display = 'none';
+    }
+    // Example function to simulate sending a message and receiving product cards
+    function sendMessage() {
+        const userInput = productInput.value.trim();
+        // Simulate processing the user input (replace with actual logic)
+        //const productCards = processUserInput(userInput);
+        console.log(userInput)
+        fetchProductData(userInput);
+        // Display the product cards in the output container
+        //displayProductCards(productCards);
+        // Clear the input field
+        productInput.value = '';
+    }
+    async function addtoCart(variantId, productName, productPrice) {
+        const apiUrl = 'https://app.bundl.ai/api/v1/addtocart';
+        console.log(checkoutId)
+        console.log(variantId)
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "checkoutId": checkoutId,
+                "variantId": variantId,
+                "quantity": 1
+            })
+        }
+        // Using Axios to make a GET request
+        const res = await fetch(apiUrl,
+            options)
+        const data = await res.json();
+        console.log(data);
+        cart.push({
+            name: productName,
+            price: productPrice
+        });
+        updateCartUI();
+    }
+    async function fetchProductData(userInput) {
+        loader.style.display = "block";
+        // Replace the URL with the actual endpoint for fetching product data
+        const apiUrl = 'https://app.bundl.ai/api/v1/getskus';
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                input: userInput
+            })
+        }
+        // Using Axios to make a GET request
+        const res = await fetch(apiUrl,
+            options)
+        const data = await res.json()
+        if (data) {
+            const contentArray = data.result.map((item) => JSON.parse(item.content));
+            const products = contentArray; // Assuming the response is an array of products
+            // Loop through the products and create elements
+            products.forEach(product => {
+                const productCard = createProductCard(product);
+                document.querySelector('.product-grid').appendChild(productCard);
+                loader.style.display = "none";
+            });
+        }
+    }
+
+    function createProductCard(product) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        // Add other elements and values based on product data
+        card.innerHTML = `
+<img class="card-img" src="${product.images[0] ? product.images[0].src : 'https://cdn.shopify.com/s/files/1/0851/8533/1494/products/wax-special.png?v=1704834934'}" alt="product-image">
+<div class="flex-row space-between w-full mb-sm">
+<p class="product-brand">${product.vendor}</p>
+<p class="product-cat hide">${product.variants[0].inventory_quantity} left </p>
+</div>
+<h1 class="product-name">${product.title}</h1>
+<div class="flex-row">
+<p class="price">$<span>${product.variants[0].price}</span></p>
+</div>
+<div class="btn-col">
+<a href="#" class="icon-link" onclick="addtoCart('${product.variants[0].admin_graphql_api_id}','${product.title}',${product.variants[0].price})">
+Add to Cart
+<svg fill="none" class="rubicons arrow-right-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;">
+<path d="M17.9645 12.9645l.071-7h-7.071" stroke-linecap="round"></path>
+<path d="M5.9645 17.9645l12-12" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</a>
+</div>
+`;
+        return card;
+    }
+</script>
