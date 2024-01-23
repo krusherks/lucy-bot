@@ -347,9 +347,9 @@
     </div>
 </div>
 <section class="product-section">
-    <div class="product-grid">
-        <div id="loader" title="loading..."><svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewbox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve"><rect x="0" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatcount="indefinite"></animate></rect><rect x="10" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatcount="indefinite"></animate></rect><rect x="20" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatcount="indefinite"></animate></rect></svg></div>
-    </div>
+    <div id="loader" title="loading..."><svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewbox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve"><rect x="0" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatcount="indefinite"></animate></rect><rect x="10" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatcount="indefinite"></animate></rect><rect x="20" y="13" width="4" height="5" fill="#5d3fd3"><animate attributename="height" attributetype="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatcount="indefinite"></animate><animate attributename="y" attributetype="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatcount="indefinite"></animate></rect></svg></div>
+    <div
+        class="product-grid"></div>
 </section>
 <script>
     const cartItemsContainer = document.getElementById('cart-items');
@@ -541,6 +541,7 @@
         updateCartUI();
     }
     async function fetchProductData(userInput) {
+        document.querySelector('.product-grid').innerHTML = "";
         loader.style.display = "block";
         // Replace the URL with the actual endpoint for fetching product data
         const apiUrl = 'https://app.bundl.ai/api/v1/getskus';
